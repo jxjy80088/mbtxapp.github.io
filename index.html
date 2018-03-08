@@ -352,7 +352,7 @@ $(".footer").click(function(){
 var is_weixin = (function() {
 	    var ua = navigator.userAgent.toLowerCase();
 	    if (ua.match(/MicroMessenger/i) == "micromessenger") {
-	        return true;
+	        return false;
 	    } else {
 	        return false;
 	    }
@@ -426,7 +426,7 @@ var is_weixin = (function() {
 	//判断是不是qq刘浏览器  
   function  liulanqi(){
       if(navigator.userAgent.indexOf("MQQBrowser")>-1){
-	    return true;
+	    return false;
 	 }
   }
   //如果是qq浏览器的话将弹框播放

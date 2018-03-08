@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)http://app.manbetx.org/?domain=m.tvdmedia.com&code= -->
 <html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <title>ManBetx - 注册 </title>
@@ -352,16 +351,13 @@ $(".footer").click(function(){
 var is_weixin = (function() {
 	    var ua = navigator.userAgent.toLowerCase();
 	    if (ua.match(/MicroMessenger/i) == "micromessenger") {
-	        return false;
+	        return true;
 	    } else {
 	        return false;
 	    }
 	})();
 //判断是不是微信
 	$(document).ready(function(){
-		initRound();
-	
-	
 				//关于微信弹窗问题开始
 			var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
 		var btn = document.getElementById('J_weixin');
@@ -426,7 +422,7 @@ var is_weixin = (function() {
 	//判断是不是qq刘浏览器  
   function  liulanqi(){
       if(navigator.userAgent.indexOf("MQQBrowser")>-1){
-	    return false;
+	    return true;
 	 }
   }
   //如果是qq浏览器的话将弹框播放

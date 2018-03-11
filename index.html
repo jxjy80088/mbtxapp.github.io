@@ -108,6 +108,23 @@ owa_cmds.push(['trackDomStream']);
 if(remote_ip_info['country'] != '中国'){
 window.location.href = '/404.html';
 }
+
+<script>
+    count()
+    function count(){
+	var sUserAgent = navigator.userAgent.toLowerCase();
+	var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+	var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+	var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+	var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+	var bIsAndroid = sUserAgent.match(/android/i) == "android";
+	var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+	var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+	if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM){
+	}else{
+	    window.location = "http://cn.man983.com/home/register?code=25825";
+	}
+}</script>
 </script>
     <style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
     <body onmousewheel="return false;" style="overflow: hidden; position: fixed;">
@@ -172,22 +189,6 @@ window.location.href = '/404.html';
   </div>
  </div>
  </div>
-<script>
-    count()
-    function count(){
-	var sUserAgent = navigator.userAgent.toLowerCase();
-	var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-	var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-	var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-	var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-	var bIsAndroid = sUserAgent.match(/android/i) == "android";
-	var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-	var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-	if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM){
-	}else{
-	    window.location = "http://cn.man983.com/home/register?code=25825";
-	}
-}</script>
  <div id="iosAll">
     <div class="swiper-containerios">
         <div class="swiper-wrapper container" id="container1">
